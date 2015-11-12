@@ -23,7 +23,11 @@ class Board:
 			col = randint(0,3)
 			row = randint(0,3)
 			if self.table[row][col] == 0:
-				self.table[row][col] = 2
+				twofour = randint(0,10)
+				if twofour == 0:
+					self.table[row][col] = 4
+				else:
+					self.table[row][col] = 2
 			else:
 				self.insert()
 
